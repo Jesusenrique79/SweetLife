@@ -1,0 +1,13 @@
+body {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.form {
+    border: 1px solid blue;
+    padding: 10px;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>{{clientes}}</h2>
+    <h2>{{hora}}</h2>
+
+
+
+
+    <form class="form" #clienteForm="ngForm" (ngSubmit)="onSubmit(clienteForm)">
+        <p>
+            <label for="cliente">Cantidad de Clientes:</label>
+            <input type="text" name="cliente" #cliente="ngModel" [(ngModel)]="cliente.clientes">
+        </p>
+        <p>
+            <label for="hora">Hora Actual:</label>
+            <input type="text" name="hora" #hora="ngModel" [(ngModel)]="cliente.hora">
+        </p>
+
+        <input type="submit" value="Contar">
+
+    </form>
+</div>
